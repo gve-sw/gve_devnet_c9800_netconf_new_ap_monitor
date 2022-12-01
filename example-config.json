@@ -1,0 +1,21 @@
+{
+    "wireless-controllers": [
+        {
+            "name": "",
+            "port": 830
+        }
+    ],
+    "netconf": {
+        "xpath-filter": "/wireless-ap-global-oper:ap-global-oper-data/ap-join-stats/ap-join-info/is-joined",
+        "subscription-period": 1000
+    },
+    "mqtt": {
+        "broker": "",
+        "port": 1883,
+        "client-id": "go_mqtt_client",
+        "topic":"wireless/ap"
+    },
+    "mongo": {
+        "url":"mongodb://"
+    }
+}
